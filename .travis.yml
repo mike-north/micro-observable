@@ -20,3 +20,14 @@ after_success:
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
+stages:
+  - basic test
+  - additional tests
+jobs:
+  fail_fast: true
+  include:
+  - stage: basic test
+    node_js: '10'
+  - stage: additional tests
+    node_js: '9'
+  - node_js: '8'
