@@ -1,4 +1,4 @@
-import { Subscription } from './subscription';
+import Subscription from './subscription';
 import { Observer } from './types';
 
 export default class Subscriber<T> extends Subscription {

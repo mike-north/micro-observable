@@ -1,5 +1,5 @@
 import Observable from './observable';
-import { Subscription } from './subscription';
+import Subscription from './subscription';
 
 export interface Observer<T> {
   next(val?: T): void;

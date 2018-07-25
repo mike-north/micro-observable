@@ -1,5 +1,5 @@
 import Observable from './observable';
-import { Subscription } from './subscription';
+import Subscription from './subscription';
 import { Observer } from './types';
 import { departializeObserver } from './utils/observer';
 

@@ -1,5 +1,5 @@
 import Subscriber from './subscriber';
-import { Subscription } from './subscription';
+import Subscription from './subscription';
 import { OperatorFunction, PartialObserver, Subscribe } from './types';
 import { departializeObserver } from './utils/observer';
 import { pipeFromArray } from './utils/pipe';

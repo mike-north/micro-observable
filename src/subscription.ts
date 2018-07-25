@@ -1,5 +1,5 @@
 import { Unsubscribe } from './types';
 
-export class Subscription {
+export default class Subscription {
   constructor(public unsubscribe: Unsubscribe) {}
 }
