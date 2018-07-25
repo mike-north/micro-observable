@@ -11,6 +11,7 @@
   "keywords": [
     "ember-addon"
   ],
+  "author": "Mike North <michael.l.north@gmail.com> (https://mike.works)",
   "scripts": {
     "problems": "node ./scripts/problems.js",
     "preversion": "npm run test",
