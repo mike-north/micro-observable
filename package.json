@@ -1,7 +1,7 @@
 {
   "name": "micro-observable",
   "version": "0.5.0",
-  "description": "A brand new TypeScript library.",
+  "description": "RxJS6-style observables in less than 1kb",
   "main": "dist/commonjs/src/index.js",
   "module": "dist/modules/src/index.js",
   "types": "dist/types/src/index.d.ts",
