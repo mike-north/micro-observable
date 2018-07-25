@@ -6,22 +6,22 @@ export interface Observer<T> {
   error(e?: any): void;
   complete(): void;
 }
-interface ErrorObserver<T> {
+export interface ErrorObserver<T> {
   next?(val?: T): void;
   error(e?: any): void;
   complete?(): void;
 }
-interface NextObserver<T> {
+export interface NextObserver<T> {
   next(val?: T): void;
   error?(e?: any): void;
   complete?(): void;
 }
-interface CompleteObserver<T> {
+export interface CompleteObserver<T> {
   next?(val?: T): void;
   error?(e?: any): void;
   complete(): void;
 }
-type NextFunction<T> = (val: T) => void;
+export type NextFunction<T> = (val: T) => void;
 
 export type PartialObserver<T> = ErrorObserver<T> | NextObserver<T> | CompleteObserver<T> | NextFunction<T>;
 
