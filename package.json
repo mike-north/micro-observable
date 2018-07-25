@@ -1,6 +1,6 @@
 {
   "name": "micro-observable",
-  "version": "0.5.0",
+  "version": "0.0.0-development",
   "description": "RxJS6-style observables in less than 1kb",
   "main": "dist/commonjs/src/index.js",
   "module": "dist/modules/src/index.js",
@@ -20,7 +20,9 @@
     "build-tests": "ember build",
     "pretest": "npm run problems",
     "test": "ember test",
-    "tdd": "ember test --server"
+    "tdd": "ember test --server",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "license": "MIT",
   "devDependencies": {
@@ -31,9 +33,15 @@
     "qunit-decorators": "^1.1.1",
     "shelljs": "^0.7.8",
     "tslint": "^5.7.0",
-    "typescript": "^2.4.2"
+    "typescript": "^2.4.2",
+    "travis-deploy-once": "^5.0.1",
+    "semantic-release": "^15.8.1"
   },
   "dependencies": {
     "ts-std": "^0.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mike-north/micro-observable.git"
   }
 }
