@@ -1,22 +1,33 @@
 import Subscriber from './subscriber';
+import { Subscription } from './subscription';
 import { OperatorFunction, PartialObserver, Subscribe } from './types';
 import { departializeObserver } from './utils/observer';
 import { pipeFromArray } from './utils/pipe';
 
-export class Observable<T> {
+export default class Observable<T> {
   static create<T>(subscribe: Subscribe<T>) {
     return new Observable<T>(function internalSubscribe(observer: PartialObserver<T>) {
       const subscriber = new Subscriber(departializeObserver(observer));
       const subscription = subscribe(subscriber);
       subscriber.unsubscribe =
-        typeof subscription === 'function'
+        subscription &&
+        (typeof subscription === 'function'
           ? subscription.bind(subscription)
-          : subscription.unsubscribe.bind(subscription);
+          : subscription.unsubscribe.bind(subscription));
       return subscription;
     });
   }
-  protected constructor(public subscribe: Subscribe<T, PartialObserver<T>>) {}
-
+  protected constructor(private subs: Subscribe<T, PartialObserver<T>>) {}
+  subscribe<O extends PartialObserver<T>>(obs: O): Subscription {
+    let cleanup = this.subs(obs);
+    return {
+      unsubscribe() {
+        if (cleanup) {
+          (typeof cleanup === 'function' ? cleanup : cleanup.unsubscribe)();
+        }
+      }
+    };
+  }
   pipe(): Observable<T>;
   pipe<A>(op1: OperatorFunction<T, A>): Observable<A>;
   pipe<A, B>(op1: OperatorFunction<T, A>, op2: OperatorFunction<A, B>): Observable<B>;

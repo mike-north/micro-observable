@@ -1,30 +1,29 @@
-import { Observable } from '../observable';
+import Observable from '../observable';
 
-export function filter<A>(conditionFn: (val: A) => boolean) {
+export default function filter<A>(conditionFn: (val: A) => boolean) {
   return (inn: Observable<A>): Observable<A> => {
-    const out = Observable.create<A>(function subscribe(out) {
+    return Observable.create<A>(function subscribe(o) {
       const inObserver = {
         next: (x: A) => {
           let passed;
           try {
             passed = conditionFn(x);
           } catch (e) {
-            out.error(e);
+            o.error(e);
             return;
           }
           if (passed) {
-            out.next(x);
+            o.next(x);
           }
         },
         error: (e: any) => {
-          out.error(e);
+          o.error(e);
         },
         complete: () => {
-          out.complete();
+          o.complete();
         }
       };
       return inn.subscribe(inObserver);
     });
-    return out;
   };
 }

@@ -1,6 +1,6 @@
-import { Observable } from '../observable';
+import Observable from '../observable';
 
-export function map<A, B>(transformFn: (val: A) => B) {
+export default function map<A, B>(transformFn: (val: A) => B) {
   return (inn: Observable<A>): Observable<B> => {
     const out = Observable.create<B>(function subscribe(outObserver) {
       const inObserver = {

@@ -61,6 +61,7 @@
 
   "include": [
     "src",
-    "test"
+    "test",
+    "types"
   ]
 }
