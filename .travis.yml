@@ -26,6 +26,6 @@ jobs:
   - stage: basic test
     node_js: '6'
   - stage: additional tests
-  - node_js: '8'
-    node_js: '9'
-    node_js: '10'
+    node_js: '8'
+  - node_js: '9'
+  - node_js: '10'
