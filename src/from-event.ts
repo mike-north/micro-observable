@@ -28,7 +28,7 @@ export interface HasEventTargetAddRemove<K extends keyof WindowEventMap, E = Win
 
 export type EventTargetLike<K extends keyof WindowEventMap> = HasEventTargetAddRemove<K>;
 
-export default function fromEvent<K extends keyof WindowEventMap, E = WindowEventMap[K]>(eventTarget: EventTargetLike<K>, eventType: K): Observable<WindowEventMap[K]> {
+export default function fromEvent<K extends keyof WindowEventMap>(eventTarget: EventTargetLike<K>, eventType: K): Observable<WindowEventMap[K]> {
   return Observable.create<WindowEventMap[K]>(function subscribe(observer) {
     eventTarget.addEventListener(eventType, observer.next);
     return new Subscription(function unsubscribe() {
