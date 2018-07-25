@@ -30,9 +30,10 @@ export type EventTargetLike<K extends keyof WindowEventMap> = HasEventTargetAddR
 
 export default function fromEvent<K extends keyof WindowEventMap>(eventTarget: EventTargetLike<K>, eventType: K): Observable<WindowEventMap[K]> {
   return Observable.create<WindowEventMap[K]>(function subscribe(observer) {
-    eventTarget.addEventListener(eventType, observer.next);
+    const l = observer.next.bind(observer);
+    eventTarget.addEventListener(eventType, l);
     return new Subscription(function unsubscribe() {
-      eventTarget.removeEventListener(eventType, observer.next);
+      eventTarget.removeEventListener(eventType, l);
     });
   });
 }
