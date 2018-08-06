@@ -5,6 +5,7 @@ import { departializeObserver } from './utils/observer';
 
 export default class Subject<T> extends Observable<T> {
   private observers: Array<Observer<T>> = [];
+  private closed = false;
   constructor() {
     super(observer => {
       let dpo = departializeObserver(observer);
@@ -17,18 +18,19 @@ export default class Subject<T> extends Observable<T> {
   }
 
   next(x: T) {
+    if (closed) throw new Error('Subject is already closed');
     this.observers.forEach(observer => observer.next(x));
   }
 
   error(e: any) {
+    if (closed) throw new Error('Subject is already closed');
     this.observers.forEach(observer => observer.error(e));
   }
 
   complete() {
+    if (closed) throw new Error('Subject is already closed');
     this.observers.forEach(observer => observer.complete());
-  }
-
-  unsubscribe() {
     this.observers = [];
+    closed = true;
   }
 }
