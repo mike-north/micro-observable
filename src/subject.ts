@@ -18,19 +18,19 @@ export default class Subject<T> extends Observable<T> {
   }
 
   next(x: T) {
-    if (closed) throw new Error('Subject is already closed');
+    if (this.closed) throw new Error('Subject is already closed');
     this.observers.forEach(observer => observer.next(x));
   }
 
   error(e: any) {
-    if (closed) throw new Error('Subject is already closed');
+    if (this.closed) throw new Error('Subject is already closed');
     this.observers.forEach(observer => observer.error(e));
   }
 
   complete() {
-    if (closed) throw new Error('Subject is already closed');
+    if (this.closed) throw new Error('Subject is already closed');
     this.observers.forEach(observer => observer.complete());
     this.observers = [];
-    closed = true;
+    this.closed = true;
   }
 }
