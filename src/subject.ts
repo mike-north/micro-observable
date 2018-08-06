@@ -27,4 +27,8 @@ export default class Subject<T> extends Observable<T> {
   complete() {
     this.observers.forEach(observer => observer.complete());
   }
+
+  unsubscribe() {
+    this.observers = [];
+  }
 }
