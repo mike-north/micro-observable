@@ -1,6 +1,9 @@
 import { UnaryFunction } from '../types';
 import { NOOP } from './constants';
 
+/**
+ * @hidden
+ */
 export function pipe<T>(): UnaryFunction<T, T>;
 export function pipe<T, A>(op1: UnaryFunction<T, A>): UnaryFunction<T, A>;
 export function pipe<T, A, B>(op1: UnaryFunction<T, A>, op2: UnaryFunction<A, B>): UnaryFunction<T, B>;
@@ -66,6 +69,9 @@ export function pipe<T, R>(...fns: Array<UnaryFunction<T, R>>): UnaryFunction<T,
   return pipeFromArray(fns);
 }
 
+/**
+ * @hidden
+ */
 export function pipeFromArray<T, R>(fns: Array<UnaryFunction<T, R>>): UnaryFunction<T, R> {
   if (!fns) {
     return NOOP as UnaryFunction<any, any>;

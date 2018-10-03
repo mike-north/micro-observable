@@ -1,2 +1,5 @@
+/**
+ * @hidden
+ */
 // tslint:disable-next-line:no-empty
-export const NOOP = () => { };
+export const NOOP = () => {};

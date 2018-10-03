@@ -18,6 +18,7 @@
     "prepare": "ember build -prod",
     "build": "ember build -prod",
     "build-tests": "ember build",
+    "build-docs": "./node_modules/.bin/typedoc --out ./docs ./src/index.ts --excludePrivate --excludePrivate --mode file",
     "pretest": "npm run problems",
     "test": "ember test",
     "tdd": "ember test --server",
@@ -26,20 +27,65 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@semantic-release/exec": "^3.1.3",
+    "@semantic-release/git": "^7.0.4",
     "@types/qunit": "^2.0.31",
     "ember-cli": "^3.1.4",
     "libkit": "^0.6.0",
     "qunit": "^2.4.1",
     "qunit-decorators": "^1.1.1",
+    "semantic-release": "^15.8.1",
     "shelljs": "^0.7.8",
-    "tslint": "^5.7.0",
-    "typescript": "^2.4.2",
     "travis-deploy-once": "^5.0.1",
-    "semantic-release": "^15.8.1"
+    "tslint": "^5.7.0",
+    "typedoc": "^0.12.0",
+    "typedoc-plugin-internal-external": "^1.0.10",
+    "typescript": "^2.4.2"
   },
   "dependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/mike-north/micro-observable.git"
+  },
+  "release": {
+    "release": {
+      "verifyConditions": [
+        "@semantic-release/npm",
+        "@semantic-release/github",
+        {
+          "path": "@semantic-release/exec",
+          "cmd": "./verify.sh"
+        }
+      ],
+      "analyzeCommits": [
+        "@semantic-release/commit-analyzer"
+      ],
+      "generateNotes": [
+        {
+          "path": "@semantic-release/exec",
+          "cmd": "yarn build-docs"
+        }
+      ],
+      "prepare": [
+        "@semantic-release/npm",
+        {
+          "path": "@semantic-release/git",
+          "assets": [
+            "docs"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ],
+      "publish": [
+        "@semantic-release/npm",
+        "@semantic-release/github"
+      ],
+      "success": [
+        "@semantic-release/github"
+      ],
+      "fail": [
+        "@semantic-release/github"
+      ]
+    }
   }
 }
