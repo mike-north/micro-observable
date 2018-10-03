@@ -13,7 +13,7 @@ import { pipeFromArray } from './utils/pipe';
  * import { Observable } from 'micro-observable';
  * ```
  *
- * @param T value type this observable emits
+ * @param T type this observable emits
  * @external
  */
 export default class Observable<T> {
