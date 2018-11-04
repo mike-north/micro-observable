@@ -18,7 +18,10 @@ export class PipelineTest {
       s.next(4);
       s.next(5);
     });
-    let out1 = in1.pipe(map(x => x * 2), filter(y => y % 3 === 0));
+    let out1 = in1.pipe(
+      map(x => x * 2),
+      filter(y => y % 3 === 0)
+    );
     a.emits(out1, [0, 6], 'emits correct values');
   }
 }
