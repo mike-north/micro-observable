@@ -8220,10 +8220,10 @@ quick-temp@^0.1.2, quick-temp@^0.1.3, quick-temp@^0.1.5, quick-temp@^0.1.8:
     rimraf "^2.5.4"
     underscore.string "~3.3.4"
 
-qunit-decorators@1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/qunit-decorators/-/qunit-decorators-1.1.4.tgz#fd14101a4c40b09bd9e9b9997ec3ee2f34ec4809"
-  integrity sha512-fb13tOHaH7US7e2IzUiIVktEWgYdzFtDeqxe8LArm/9EG/IdxbIj+DvrM8ejP2JVK0WQCtF6wf1myhJi7fXmlg==
+qunit-decorators@1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/qunit-decorators/-/qunit-decorators-1.1.5.tgz#cae90e84e303a56ccf2cf0bd08f99936d97eb44b"
+  integrity sha512-nFJSYAOx+7NfMxyeZYxCm+M/7/xy+U6eIzP7ntIpSuMNdg+xtIqr0B4JEhwJ0RP9lajvb9HyeBlHB1IpOggZ9Q==
   dependencies:
     qunit "^2.4.1"
 
