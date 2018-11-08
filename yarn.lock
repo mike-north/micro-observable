@@ -203,20 +203,6 @@
     universal-user-agent "^2.0.0"
     url-template "^2.0.8"
 
-"@octokit/rest@^15.2.0":
-  version "15.9.6"
-  resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-15.9.6.tgz#992a8b0fe17ac85f572e5b57d00ea5493be010ee"
-  integrity sha512-8PLMqwgbe6zAlcSpK5HQcOB/ZSLJu2wPVA2GyyddaovF8oyPYpKcy7x2U2nF+oR2qay+P5QjHgKpgY+s72Oudg==
-  dependencies:
-    before-after-hook "^1.1.0"
-    btoa-lite "^1.0.0"
-    debug "^3.1.0"
-    http-proxy-agent "^2.1.0"
-    https-proxy-agent "^2.2.0"
-    lodash "^4.17.4"
-    node-fetch "^2.1.1"
-    url-template "^2.0.8"
-
 "@semantic-release/changelog@^3.0.0":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@semantic-release/changelog/-/changelog-3.0.1.tgz#d39a8130aa33c54541e529322769a1c8c51dfc54"
@@ -227,15 +213,15 @@
     fs-extra "^7.0.0"
     lodash "^4.17.4"
 
-"@semantic-release/commit-analyzer@^6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@semantic-release/commit-analyzer/-/commit-analyzer-6.0.0.tgz#e26ef70938059f03525573560f65212164953121"
-  integrity sha512-LEBEg5Ek3PCVv8srHRA8uuwu0t9nAXuBQ9ixjBiMYCqCCUsCezUi5wRdmXnJkXs5/yQkd4Dzx8OJ1zIAL2Pqeg==
+"@semantic-release/commit-analyzer@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@semantic-release/commit-analyzer/-/commit-analyzer-6.1.0.tgz#32bbe3c23da86e23edf072fbb276fa2f383fcb17"
+  integrity sha512-2lb+t6muGenI86mYGpZYOgITx9L3oZYF697tJoqXeQEk0uw0fm+OkkOuDTBA3Oax9ftoNIrCKv9bwgYvxrbM6w==
   dependencies:
     conventional-changelog-angular "^5.0.0"
     conventional-commits-filter "^2.0.0"
     conventional-commits-parser "^3.0.0"
-    debug "^3.1.0"
+    debug "^4.0.0"
     import-from "^2.1.0"
     lodash "^4.17.4"
 
@@ -244,18 +230,7 @@
   resolved "https://registry.yarnpkg.com/@semantic-release/error/-/error-2.2.0.tgz#ee9d5a09c9969eade1ec864776aeda5c5cddbbf0"
   integrity sha512-9Tj/qn+y2j+sjCI3Jd+qseGtHjOAeg7dU2/lVcqIQ9TV3QDaDXDYXcoOHU+7o2Hwh8L8ymL4gfuO7KxDs3q2zg==
 
-"@semantic-release/exec@3.1.3":
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/@semantic-release/exec/-/exec-3.1.3.tgz#4afef8005904567e007c4830d54a718877c5ed39"
-  integrity sha512-B9pqgHHorSjxVPD5can6K9XQl5pVlmyXaFKs0p+gQF3iMwg3lTByZFAAHm0OkkzW0uOVA17CAchTloebrn+HrQ==
-  dependencies:
-    "@semantic-release/error" "^2.1.0"
-    debug "^4.0.0"
-    execa "^1.0.0"
-    lodash "^4.17.4"
-    parse-json "^4.0.0"
-
-"@semantic-release/exec@^3.0.2":
+"@semantic-release/exec@3.3.0", "@semantic-release/exec@^3.0.2":
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/@semantic-release/exec/-/exec-3.3.0.tgz#3ceaf66084cee82fb4babde387583259701ed381"
   integrity sha512-6a5nMGLyYJUl5me4orEIA89mf1Roz1jEVlv0GgIJv1k/yjEcmWicYQ76PrPfUzh81sVtfHfK0zLN5Vikz8f5oA==
@@ -267,23 +242,7 @@
     lodash "^4.17.4"
     parse-json "^4.0.0"
 
-"@semantic-release/git@7.0.4":
-  version "7.0.4"
-  resolved "https://registry.yarnpkg.com/@semantic-release/git/-/git-7.0.4.tgz#b10c85744044d797ebf979eb0fa1e6e499b4100c"
-  integrity sha512-/kdHnetgogIC/W5CDYQ1xmxy+4KQG7MqkgnqcPi4dj8tXCJrmVy9XAR2LySUhRTtnDniLq0H29DsD9HW5x+PKQ==
-  dependencies:
-    "@semantic-release/error" "^2.1.0"
-    aggregate-error "^1.0.0"
-    debug "^4.0.0"
-    dir-glob "^2.0.0"
-    execa "^1.0.0"
-    fs-extra "^7.0.0"
-    globby "^8.0.1"
-    lodash "^4.17.4"
-    micromatch "^3.1.4"
-    p-reduce "^1.0.0"
-
-"@semantic-release/git@^7.0.1":
+"@semantic-release/git@7.0.5", "@semantic-release/git@^7.0.1":
   version "7.0.5"
   resolved "https://registry.yarnpkg.com/@semantic-release/git/-/git-7.0.5.tgz#640e66683dbbb0a0771e9968e2dc15ec5facaf38"
   integrity sha512-90TDMAQw9S5BXjygpEb8zdwLCnUmP5G2GfKHUvmFapFNh3UsI1AJljEUe5hJh/GOuHiyBD/whnCMYExsp8a34Q==
@@ -299,30 +258,7 @@
     micromatch "^3.1.4"
     p-reduce "^1.0.0"
 
-"@semantic-release/github@^5.0.0":
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-5.0.2.tgz#3a3a4bb7e86fc1dc31829daf5066a232e2097e5b"
-  integrity sha512-YySh2iBDXcsU5Mtaseo9L3wsCgTNj2wDMxi8L6hLxFayJy3YqiZ9Yym/jf+Fh8J/Afy8IxyVaz8Re5AfjnoyOg==
-  dependencies:
-    "@octokit/rest" "^15.2.0"
-    "@semantic-release/error" "^2.2.0"
-    aggregate-error "^1.0.0"
-    bottleneck "^2.0.1"
-    debug "^3.1.0"
-    dir-glob "^2.0.0"
-    fs-extra "^7.0.0"
-    globby "^8.0.0"
-    http-proxy-agent "^2.1.0"
-    https-proxy-agent "^2.2.1"
-    issue-parser "^2.2.0"
-    lodash "^4.17.4"
-    mime "^2.0.3"
-    p-filter "^1.0.0"
-    p-retry "^2.0.0"
-    parse-github-url "^1.0.1"
-    url-join "^4.0.0"
-
-"@semantic-release/github@^5.0.2":
+"@semantic-release/github@^5.0.2", "@semantic-release/github@^5.1.0":
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-5.2.1.tgz#48a7cbd326471d7dc8d2fcea03580d2da58f4fc9"
   integrity sha512-EVh5MCMOSl5WfOIum+k7fb7ZaDBcZAepPvtMrJOn8HKa9MERK6PgT76OKro+tReWjT1PnGiaKjofjyRC4BhN6Q==
@@ -345,40 +281,39 @@
     parse-github-url "^1.0.1"
     url-join "^4.0.0"
 
-"@semantic-release/npm@^5.0.1":
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-5.0.2.tgz#0d85deefd859d58e003abc1c5610e2fa5c25a4ae"
-  integrity sha512-h0tNQGGd4pXO9AUVa3LlVLafMF2CJU7TRwl0KTqWLfmb5sFOxNRK4yIkoD/TCmMUst4vxgG57H1fPaD7GE17Fg==
+"@semantic-release/npm@^5.0.5":
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-5.0.6.tgz#7dfd11e2b942eb20117c80cc0e068488c516f008"
+  integrity sha512-Y8BjpsJ/qHkKyDaHKqA/RCIODfxYIcC1FS4AuG0FylGoc8MD9WsR0JAI+d4cGPKg7KyKZJKM/Kf3h71tHhUHqw==
   dependencies:
     "@semantic-release/error" "^2.2.0"
     aggregate-error "^1.0.0"
     detect-indent "^5.0.0"
     detect-newline "^2.1.0"
-    execa "^0.10.0"
+    execa "^1.0.0"
     fs-extra "^7.0.0"
     lodash "^4.17.4"
     nerf-dart "^1.0.0"
-    normalize-url "^3.0.0"
+    normalize-url "^4.0.0"
     npm "^6.3.0"
     parse-json "^4.0.0"
     rc "^1.2.8"
     read-pkg "^4.0.0"
     registry-auth-token "^3.3.1"
 
-"@semantic-release/release-notes-generator@^7.0.0":
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/@semantic-release/release-notes-generator/-/release-notes-generator-7.0.1.tgz#300c06b56e965a0aec5d7a83f164b0d7e497ea7b"
-  integrity sha512-zMX2t+v0hjr8f+hfqJgvZ/7m9Bjt4RJ6qk52oo+bxwqEnwCm4b4u8nwGLXFfBg/Q7ph/E0MuzYIFrhECICxzBw==
+"@semantic-release/release-notes-generator@^7.1.2":
+  version "7.1.4"
+  resolved "https://registry.yarnpkg.com/@semantic-release/release-notes-generator/-/release-notes-generator-7.1.4.tgz#8f4f752c5a8385abdaac1256127cef05988bc2ad"
+  integrity sha512-pWPouZujddgb6t61t9iA9G3yIfp3TeQ7bPbV1ixYSeP6L7gI1+Du82fY/OHfEwyifpymLUQW0XnIKgKct5IMMw==
   dependencies:
     conventional-changelog-angular "^5.0.0"
     conventional-changelog-writer "^4.0.0"
     conventional-commits-filter "^2.0.0"
     conventional-commits-parser "^3.0.0"
-    debug "^3.1.0"
+    debug "^4.0.0"
     get-stream "^4.0.0"
-    git-url-parse "^10.0.1"
     import-from "^2.1.0"
-    into-stream "^3.1.0"
+    into-stream "^4.0.0"
     lodash "^4.17.4"
 
 "@sindresorhus/is@^0.11.0":
@@ -709,10 +644,15 @@ array-union@^1.0.1:
   dependencies:
     array-uniq "^1.0.1"
 
-array-uniq@^1.0.0, array-uniq@^1.0.1:
+array-uniq@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/array-uniq/-/array-uniq-1.0.3.tgz#af6ac877a25cc7f74e058894753858dfdb24fdb6"
   integrity sha1-r2rId6Jcx/dOBYiUdThY39sk/bY=
+
+array-uniq@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/array-uniq/-/array-uniq-2.0.0.tgz#0009e30306e37a6dd2e2e2480db5316fdade1583"
+  integrity sha512-O3QZEr+3wDj7otzF7PjNGs6CA3qmYMLvt5xGkjY/V0VxS+ovvqVo/5wKM/OVOAyuX4DTh9H31zE/yKtO66hTkg==
 
 array-unique@^0.3.2:
   version "0.3.2"
@@ -3670,12 +3610,12 @@ entities@~1.1.1:
   resolved "https://registry.yarnpkg.com/entities/-/entities-1.1.1.tgz#6e5c2d0a5621b5dadaecef80b90edfb5cd7772f0"
   integrity sha1-blwtClYhtdra7O+AuQ7ftc13cvA=
 
-env-ci@^2.0.0:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/env-ci/-/env-ci-2.1.1.tgz#73c42c0f3ee4813457210a8440a2ee1bbea0102a"
-  integrity sha512-7KVsNirTANngtXZkKzbO/9xtHB51rNzauhuKRKBj2itgATsD/N9ZjyfWNmfiUF9aZIaoqrZ8x0HS8M7Bsk7dBQ==
+env-ci@^3.0.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/env-ci/-/env-ci-3.1.0.tgz#8aef2340389ae17e27623988ae1002f130491185"
+  integrity sha512-+yFT8QX8W9bee0/fuzKvqt2vEhWvU3FXZ1P5xbveDq/EqcYLh4e0QNE16okUS3pawALDGXE9eCJPVeWY0/ilQA==
   dependencies:
-    execa "^0.10.0"
+    execa "^1.0.0"
     java-properties "^0.2.9"
 
 err-code@^1.0.0:
@@ -4264,13 +4204,13 @@ find-up@^3.0.0:
   dependencies:
     locate-path "^3.0.0"
 
-find-versions@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/find-versions/-/find-versions-2.0.0.tgz#2ad90d490f6828c1aa40292cf709ac3318210c3c"
-  integrity sha1-KtkNSQ9oKMGqQCks9wmsMxghDDw=
+find-versions@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/find-versions/-/find-versions-3.0.0.tgz#2c05a86e839c249101910100b354196785a2c065"
+  integrity sha512-IUvtItVFNmTtKoB0PRfbkR0zR9XMG5rWNO3qI1S8L0zdv+v2gqzM0pAunloxqbqAfT8w7bg8n/5gHzTXte8H5A==
   dependencies:
-    array-uniq "^1.0.0"
-    semver-regex "^1.0.0"
+    array-uniq "^2.0.0"
+    semver-regex "^2.0.0"
 
 find-yarn-workspace-root@^1.0.0, find-yarn-workspace-root@^1.1.0:
   version "1.2.0"
@@ -4628,21 +4568,6 @@ git-repo-info@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/git-repo-info/-/git-repo-info-2.0.0.tgz#2e7a68ba3d0253e8e885c4138f922e6561de59bb"
   integrity sha512-5wiwo0Pert7y8YtAC6Gym+ekeKojBospUEaQIPjK/djKvmONk7ZDpM986Q2OP5LEuwlmOom9Ji0XsGe78EFBeQ==
-
-git-up@^2.0.0:
-  version "2.0.10"
-  resolved "https://registry.yarnpkg.com/git-up/-/git-up-2.0.10.tgz#20fe6bafbef4384cae253dc4f463c49a0c3bd2ec"
-  integrity sha512-2v4UN3qV2RGypD9QpmUjpk+4+RlYpW8GFuiZqQnKmvei08HsFPd0RfbDvEhnE4wBvnYs8ORVtYpOFuuCEmBVBw==
-  dependencies:
-    is-ssh "^1.3.0"
-    parse-url "^1.3.0"
-
-git-url-parse@^10.0.1:
-  version "10.0.1"
-  resolved "https://registry.yarnpkg.com/git-url-parse/-/git-url-parse-10.0.1.tgz#75f153b24ac7297447fc583cf9fac23a5ae687c1"
-  integrity sha512-Tq2u8UPXc/FawC/dO8bvh8jcck0Lkor5OhuZvmVSeyJGRucDBfw9y2zy/GNCx28lMYh1N12IzPwDexjUNFyAeg==
-  dependencies:
-    git-up "^2.0.0"
 
 glob-parent@^3.1.0:
   version "3.1.0"
@@ -5254,13 +5179,13 @@ interpret@^1.0.0:
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.1.0.tgz#7ed1b1410c6a0e0f78cf95d3b8440c63f78b8614"
   integrity sha1-ftGxQQxqDg94z5XTuEQMY/eLhhQ=
 
-into-stream@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/into-stream/-/into-stream-3.1.0.tgz#96fb0a936c12babd6ff1752a17d05616abd094c6"
-  integrity sha1-lvsKk2wSur1v8XUqF9BWFqvQlMY=
+into-stream@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/into-stream/-/into-stream-4.0.0.tgz#ef10ee2ffb6f78af34c93194bbdc36c35f7d8a9d"
+  integrity sha512-i29KNyE5r0Y/UQzcQ0IbZO1MYJ53Jn0EcFRZPj5FzWKYH17kDFEOwuA+3jroymOI06SW1dEDnly9A1CAreC5dg==
   dependencies:
     from2 "^2.1.1"
-    p-is-promise "^1.1.0"
+    p-is-promise "^2.0.0"
 
 invariant@^2.2.2:
   version "2.2.4"
@@ -5516,13 +5441,6 @@ is-retry-allowed@^1.0.0:
   resolved "https://registry.yarnpkg.com/is-retry-allowed/-/is-retry-allowed-1.1.0.tgz#11a060568b67339444033d0125a61a20d564fb34"
   integrity sha1-EaBgVotnM5REAz0BJaYaINVk+zQ=
 
-is-ssh@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/is-ssh/-/is-ssh-1.3.0.tgz#ebea1169a2614da392a63740366c3ce049d8dff6"
-  integrity sha1-6+oRaaJhTaOSpjdANmw84EnY3/Y=
-  dependencies:
-    protocols "^1.1.0"
-
 is-stream@^1.0.0, is-stream@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
@@ -5612,16 +5530,6 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
-
-issue-parser@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/issue-parser/-/issue-parser-2.2.0.tgz#9385c8b55c134c7e5a5944a5b53c188dee6d1aac"
-  integrity sha512-qBm9P//mcpIosDX0GU29TJkOcIIyF4PMnetfU6yfWsukLRQJPUWdJuYFjEkHlW5bxCbmEkpBnkaAPiTmCYCNDQ==
-  dependencies:
-    lodash.capitalize "^4.2.1"
-    lodash.escaperegexp "^4.1.2"
-    lodash.isplainobject "^4.0.6"
-    lodash.isstring "^4.0.1"
 
 issue-parser@^3.0.0:
   version "3.0.0"
@@ -6620,6 +6528,11 @@ marked@^0.4.0:
   resolved "https://registry.yarnpkg.com/marked/-/marked-0.4.0.tgz#9ad2c2a7a1791f10a852e0112f77b571dce10c66"
   integrity sha512-tMsdNBgOsrUophCAFQl0XPe6Zqk/uy9gnue+jIIKhykO51hxyu6uNx7zBPy0+y/WKYVZZMspV9YeXLNdKk+iYw==
 
+marked@^0.5.0:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-0.5.1.tgz#062f43b88b02ee80901e8e8d8e6a620ddb3aa752"
+  integrity sha512-iUkBZegCZou4AdwbKTwSW/lNDcz5OuRSl3qdcl31Ia0B2QPG0Jn+tKblh/9/eP9/6+4h27vpoh8wel/vQOV0vw==
+
 matcher-collection@^1.0.0, matcher-collection@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/matcher-collection/-/matcher-collection-1.0.5.tgz#2ee095438372cb8884f058234138c05c644ec339"
@@ -7219,10 +7132,15 @@ normalize-path@^2.1.1:
   dependencies:
     remove-trailing-separator "^1.0.1"
 
-normalize-url@^3.0.0, normalize-url@^3.1.0:
+normalize-url@^3.1.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-3.2.0.tgz#98d0948afc82829f374320f405fe9ca55a5f8567"
   integrity sha512-WvF3Myk0NhXkG8S9bygFM4IC1KOvnVJGq0QoGeoqOYOBeinBZp5ybW3QuYbTc89lkWBMM9ZBO4QGRoc0353kKA==
+
+normalize-url@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-4.0.0.tgz#6c2214dde2fc8ea88509ec79774ccbd1d426c1ea"
+  integrity sha512-OrtNzJOeI9+UaF8KfvPoqh8ZVjLiun+fggtLzrpPsmdOU01eIp3vYXDfeFv4KwqJxcmmrW/ubNCN+9iIQRVtfw==
 
 npm-audit-report@^1.3.1:
   version "1.3.1"
@@ -7646,10 +7564,10 @@ p-finally@^1.0.0:
   resolved "https://registry.yarnpkg.com/p-finally/-/p-finally-1.0.0.tgz#3fbcfb15b899a44123b34b6dcc18b724336a2cae"
   integrity sha1-P7z7FbiZpEEjs0ttzBi3JDNqLK4=
 
-p-is-promise@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/p-is-promise/-/p-is-promise-1.1.0.tgz#9c9456989e9f6588017b0434d56097675c3da05e"
-  integrity sha1-nJRWmJ6fZYgBewQ01WCXZ1w9oF4=
+p-is-promise@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/p-is-promise/-/p-is-promise-2.0.0.tgz#7554e3d572109a87e1f3f53f6a7d85d1b194f4c5"
+  integrity sha512-pzQPhYMCAgLAKPWD2jC3Se9fEfrD9npNos0y150EeqZll7akhEgGhTW/slB6lHku8AvYGiJ+YJ5hfHKePPgFWg==
 
 p-limit@^1.1.0:
   version "1.3.0"
@@ -7796,14 +7714,6 @@ parse-passwd@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/parse-passwd/-/parse-passwd-1.0.0.tgz#6d5b934a456993b23d37f40a382d6f1666a8e5c6"
   integrity sha1-bVuTSkVpk7I9N/QKOC1vFmao5cY=
-
-parse-url@^1.3.0:
-  version "1.3.11"
-  resolved "https://registry.yarnpkg.com/parse-url/-/parse-url-1.3.11.tgz#57c15428ab8a892b1f43869645c711d0e144b554"
-  integrity sha1-V8FUKKuKiSsfQ4aWRccR0OFEtVQ=
-  dependencies:
-    is-ssh "^1.3.0"
-    protocols "^1.4.0"
 
 parseqs@0.0.5:
   version "0.0.5"
@@ -8081,11 +7991,6 @@ proto-list@~1.2.1:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/proto-list/-/proto-list-1.2.4.tgz#212d5bfe1318306a420f6402b8e26ff39647a849"
   integrity sha1-IS1b/hMYMGpCD2QCuOJv85ZHqEk=
-
-protocols@^1.1.0, protocols@^1.4.0:
-  version "1.4.6"
-  resolved "https://registry.yarnpkg.com/protocols/-/protocols-1.4.6.tgz#f8bb263ea1b5fd7a7604d26b8be39bd77678bf8a"
-  integrity sha1-+LsmPqG1/Xp2BNJri+Ob13Z4v4o=
 
 protoduck@^5.0.0:
   version "5.0.0"
@@ -8878,30 +8783,29 @@ sax@^1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
 
-semantic-release@15.9.8:
-  version "15.9.8"
-  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-15.9.8.tgz#cacd6a160f8155f1ef98eef5923af19979bc34e5"
-  integrity sha512-NxHTuMiMhkZEaBfcs7V9fCjoDTTZe/yhcq4L2ryNRTD3Bdo1hSCj4CQgjFGJ6A7wYk5i70l5pQyGJygF1e5UFA==
+semantic-release@15.10.8:
+  version "15.10.8"
+  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-15.10.8.tgz#07027a159199148998dc5f246ed6533d0441851c"
+  integrity sha512-+n1eQArIw0TROFFwyf6csSLtKPt47goFbYk0ROAz3ja0r0ltV/ClKNCN6bkV2XzVlvTYqYFY6yutOIvPr1K4hQ==
   dependencies:
-    "@semantic-release/commit-analyzer" "^6.0.0"
+    "@semantic-release/commit-analyzer" "^6.1.0"
     "@semantic-release/error" "^2.2.0"
-    "@semantic-release/github" "^5.0.0"
-    "@semantic-release/npm" "^5.0.1"
-    "@semantic-release/release-notes-generator" "^7.0.0"
+    "@semantic-release/github" "^5.1.0"
+    "@semantic-release/npm" "^5.0.5"
+    "@semantic-release/release-notes-generator" "^7.1.2"
     aggregate-error "^1.0.0"
     cosmiconfig "^5.0.1"
-    debug "^3.1.0"
-    env-ci "^2.0.0"
-    execa "^0.10.0"
+    debug "^4.0.0"
+    env-ci "^3.0.0"
+    execa "^1.0.0"
     figures "^2.0.0"
-    find-versions "^2.0.0"
+    find-versions "^3.0.0"
     get-stream "^4.0.0"
     git-log-parser "^1.2.0"
-    git-url-parse "^10.0.1"
     hook-std "^1.1.0"
     hosted-git-info "^2.7.1"
     lodash "^4.17.4"
-    marked "^0.4.0"
+    marked "^0.5.0"
     marked-terminal "^3.0.0"
     p-locate "^3.0.0"
     p-reduce "^1.0.0"
@@ -8923,10 +8827,10 @@ semver-diff@^2.0.0:
   dependencies:
     semver "^5.0.3"
 
-semver-regex@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/semver-regex/-/semver-regex-1.0.0.tgz#92a4969065f9c70c694753d55248fc68f8f652c9"
-  integrity sha1-kqSWkGX5xwxpR1PVUkj8aPj2Usk=
+semver-regex@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/semver-regex/-/semver-regex-2.0.0.tgz#a93c2c5844539a770233379107b38c7b4ac9d338"
+  integrity sha512-mUdIBBvdn0PLOeP3TEkMH7HHeUP3GjsXCwKarjv/kGmUFOYg1VqEemKhoQpWMu6X2I8kHeuVdGibLGkVK+/5Qw==
 
 "semver@2 >=2.2.1 || 3.x || 4 || 5", "semver@2 || 3 || 4 || 5", "semver@2.x || 3.x || 4 || 5", "semver@^2.3.0 || 3.x || 4 || 5", semver@^5.0.3, semver@^5.1.0, semver@^5.1.1, semver@^5.3.0, semver@^5.4.1, semver@^5.5.0:
   version "5.5.0"
