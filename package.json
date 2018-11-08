@@ -32,7 +32,7 @@
     "@types/qunit": "2.5.3",
     "ember-cli": "3.3.0",
     "libkit": "mike-north/libkit#ts-3",
-    "qunit-decorators": "1.1.2",
+    "qunit-decorators": "1.1.4",
     "qunit": "2.8.0",
     "semantic-release": "15.9.8",
     "shelljs": "0.8.2",
