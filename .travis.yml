@@ -1,29 +1,42 @@
 language: node_js
 sudo: required
 dist: trusty
+node_js: '8'
 addons:
-    chrome: stable
+  chrome: stable
 before_script:
-    - "sudo chown root /opt/google/chrome/chrome-sandbox"
-    - "sudo chmod 4755 /opt/google/chrome/chrome-sandbox"
+  - 'sudo chown root /opt/google/chrome/chrome-sandbox'
+  - 'sudo chmod 4755 /opt/google/chrome/chrome-sandbox'
 cache:
   directories:
     - ~/.npm
 notifications:
   email: false
 
-after_success:
-  - npm run travis-deploy-once "npm run semantic-release"
+install:
+  - yarn install --no-lockfile --non-interactive
+
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
+
 stages:
-  - basic test
-  - additional tests
+  - 'Test'
+  - name: 'Deploy'
+    if: branch = master AND type = push
+
 jobs:
   fail_fast: true
   include:
-  - stage: basic test
-    node_js: '8'
-  - stage: additional tests
-    node_js: '10'
+    - stage: 'Test'
+      name: 'Fixed Dependencies'
+      install: yarn install --non-interactive
+    - name: 'Floating Dependencies'
+    - name: 'Conventional Commits'
+      script: commitlint-travis
+
+    - stage: 'Deploy'
+      name: 'Publish to npm'
+      install:
+        - yarn install --non-interactive
+      script: yarn semantic-release
