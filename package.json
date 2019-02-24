@@ -34,7 +34,7 @@
     "@semantic-release/exec": "3.3.2",
     "@semantic-release/git": "7.0.8",
     "@types/qunit": "2.5.4",
-    "ember-cli": "3.6.0",
+    "ember-cli": "3.6.1",
     "husky": "1.2.1",
     "libkit": "mike-north/libkit#ts-3",
     "qunit": "2.9.0",
