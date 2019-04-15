@@ -10565,10 +10565,10 @@ typedoc-default-themes@^0.5.0:
   resolved "https://registry.yarnpkg.com/typedoc-default-themes/-/typedoc-default-themes-0.5.0.tgz#6dc2433e78ed8bea8e887a3acde2f31785bd6227"
   integrity sha1-bcJDPnjti+qOiHo6zeLzF4W9Yic=
 
-typedoc-plugin-internal-external@2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/typedoc-plugin-internal-external/-/typedoc-plugin-internal-external-2.0.1.tgz#aedd3e3860c69a8188cc4db141b2385cfed3d4c1"
-  integrity sha512-SFccvQZ4NC9xHiuFHRtALGA43EAYUv373Zmo8KeaSrM1dBaYFidCzXEFACAgPjazBzXEH7fljtdsLmC2yvNxDw==
+typedoc-plugin-internal-external@2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/typedoc-plugin-internal-external/-/typedoc-plugin-internal-external-2.0.2.tgz#6ced269be25e1b23559443c2ce6a5483860d53c3"
+  integrity sha512-ZWDJvHT2TGIKSkOkyKc7fiSbz/mBHjXzppyzuQlEEAFJmi9YElEVRC34v0xJz4qGUtVT5nNw7gbD1umKowG4wQ==
 
 typedoc@0.13.0:
   version "0.13.0"
