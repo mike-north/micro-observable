@@ -32,7 +32,7 @@
     "@mike-north/js-lib-renovate-config": "1.1.5",
     "@mike-north/js-lib-semantic-release-config": "1.0.1",
     "@semantic-release/exec": "3.3.5",
-    "@semantic-release/git": "7.0.15",
+    "@semantic-release/git": "7.0.16",
     "@types/qunit": "2.5.4",
     "ember-cli": "3.6.1",
     "husky": "1.2.1",
