@@ -1,6 +1,6 @@
 # micro-observable
 
-RxJS6-style observables in less than 1kb, with code taken from RxJS, [toy-rx](https://github.com/staltz/toy-rx) and more.
+RxJS6-style observables in less than 1kb, with code taken from RxJS, [toy-rx](https://github.com/staltz/toy-rx) and more!
 
 [![Build Status](https://travis-ci.org/mike-north/micro-observable.svg?branch=master)](https://travis-ci.org/mike-north/micro-observable)
 [![Version](https://img.shields.io/npm/v/micro-observable.svg)](http://npmjs.com/package/micro-observable)
