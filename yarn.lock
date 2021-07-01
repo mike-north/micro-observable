@@ -12129,10 +12129,15 @@ typedoc@0.13.0:
     typedoc-default-themes "^0.5.0"
     typescript "3.1.x"
 
-typescript@3.1.8, typescript@3.1.x:
+typescript@3.1.x:
   version "3.1.8"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.1.8.tgz#20703f388d9fccc562ca4a049d8a7567c8e95ebd"
   integrity sha512-R97qglMfoKjfKD0N24o7W6bS+SwjN/eaQNIaxR8S5HdLRnt7rCk6LCmE3tve1KN8gXKgbJU51aZHRRMAQcIbMA==
+
+typescript@4.3.5:
+  version "4.3.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.5.tgz#4d1c37cc16e893973c45a06886b7113234f119f4"
+  integrity sha512-DqQgihaQ9cUrskJo9kIyW/+g0Vxsk8cDtZ52a3NGh0YNTfpUSArXSohyUGnvbPazEPLu398C0UxmKSOrPumUzA==
 
 typescript@~3.5.3:
   version "3.5.3"
