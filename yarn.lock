@@ -1400,9 +1400,9 @@
   integrity sha512-vt+kDhq/M2ayberEtJcIN/hxXy1Pk+59g2FV/ZQceeaTyCtCucjL2Q7FXlFjtWn4n15KCr1NE2lNNFhp0lEThw==
 
 "@types/express-serve-static-core@^4.17.18":
-  version "4.17.26"
-  resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.17.26.tgz#5d9a8eeecb9d5f9d7fc1d85f541512a84638ae88"
-  integrity sha512-zeu3tpouA043RHxW0gzRxwCHchMgftE8GArRsvYT0ByDMbn19olQHx5jLue0LxWY6iYtXb7rXmuVtSkhy9YZvQ==
+  version "4.17.27"
+  resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.17.27.tgz#7a776191e47295d2a05962ecbb3a4ce97e38b401"
+  integrity sha512-e/sVallzUTPdyOTiqi8O8pMdBBphscvI6E4JYaKlja4Lm+zh7UFSSdW5VMkRbhDtmrONqOUHOXRguPsDckzxNA==
   dependencies:
     "@types/node" "*"
     "@types/qs" "*"
@@ -1483,9 +1483,9 @@
   integrity sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==
 
 "@types/node@*", "@types/node@>= 8", "@types/node@>=10.0.0":
-  version "17.0.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.1.tgz#88d501e84b6185f6489ecee4ba9e8fcec7f29bb2"
-  integrity sha512-NXKvBVUzIbs6ylBwmOwHFkZS2EXCcjnqr8ZCRNaXBkHAf+3mn/rPcJxwrzuc6movh8fxQAsUUfYklJ/EG+hZqQ==
+  version "17.0.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.5.tgz#57ca67ec4e57ad9e4ef5a6bab48a15387a1c83e0"
+  integrity sha512-w3mrvNXLeDYV1GKTZorGJQivK6XLCoGwpnyJFbJVK/aTBQUxOCaa/GlFAAN3OTDFcb7h5tiFG+YXCO2By+riZw==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
@@ -2908,9 +2908,9 @@ can-symlink@^1.0.0:
     tmp "0.0.28"
 
 caniuse-lite@^1.0.30001286:
-  version "1.0.30001291"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001291.tgz#08a8d2cfea0b2cf2e1d94dd795942d0daef6108c"
-  integrity sha512-roMV5V0HNGgJ88s42eE70sstqGW/gwFndosYrikHthw98N5tLnOTxFqMLQjZVRxTWFlJ4rn+MsgXrR7MDPY4jA==
+  version "1.0.30001292"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001292.tgz#4a55f61c06abc9595965cfd77897dc7bc1cdc456"
+  integrity sha512-jnT4Tq0Q4ma+6nncYQVe7d73kmDmE9C3OGTx3MvW7lBM/eY1S1DZTMBON7dqV481RhNiS5OxD7k9JQvmDOTirw==
 
 capture-exit@^2.0.0:
   version "2.0.0"
@@ -3563,9 +3563,9 @@ copy-descriptor@^0.1.0:
   integrity sha1-Z29us8OZl8LuGsOpJP1hJHSPV40=
 
 core-js-compat@^3.18.0, core-js-compat@^3.19.1:
-  version "3.20.0"
-  resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.20.0.tgz#fd704640c5a213816b6d10ec0192756111e2c9d1"
-  integrity sha512-relrah5h+sslXssTTOkvqcC/6RURifB0W5yhYBdBkaPYa5/2KBMiog3XiD+s3TwEHWxInWVv4Jx2/Lw0vng+IQ==
+  version "3.20.1"
+  resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.20.1.tgz#96917b4db634fbbbc7b36575b2e8fcbf7e4f9691"
+  integrity sha512-AVhKZNpqMV3Jz8hU0YEXXE06qoxtQGsAqU0u1neUngz5IusDJRX/ZJ6t3i7mS7QxNyEONbCo14GprkBrxPlTZA==
   dependencies:
     browserslist "^4.19.1"
     semver "7.0.0"
@@ -4042,9 +4042,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.4.17:
-  version "1.4.24"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.24.tgz#9cf8a92d5729c480ee47ff0aa5555f57467ae2fa"
-  integrity sha512-erwx5r69B/WFfFuF2jcNN0817BfDBdC4765kQ6WltOMuwsimlQo3JTEq0Cle+wpHralwdeX3OfAtw/mHxPK0Wg==
+  version "1.4.28"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.28.tgz#fef0e92e281df6d568f482d8d53c34ca5374de48"
+  integrity sha512-Gzbf0wUtKfyPaqf0Plz+Ctinf9eQIzxEqBHwSvbGfeOm9GMNdLxyu1dNiCUfM+x6r4BE0xUJNh3Nmg9gfAtTmg==
 
 elliptic@^6.5.3:
   version "6.5.4"
@@ -4091,7 +4091,104 @@ ember-cli-string-utils@^1.1.0:
   resolved "https://registry.yarnpkg.com/ember-cli-string-utils/-/ember-cli-string-utils-1.1.0.tgz#39b677fc2805f55173735376fcef278eaa4452a1"
   integrity sha1-ObZ3/CgF9VFzc1N2/O8njqpEUqE=
 
-ember-cli@*, ember-cli@4.0.0:
+ember-cli@*:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-4.0.1.tgz#2f5fc81a0aa6b3003addb064e00e5e41372bd58b"
+  integrity sha512-5FYStQlpdF1Qn7+iPe3YCpq131Sjey8LTilLb5xp+L+GpGE4b+9/8hzI3dIHh7WQSvoeuR5AAluP9nNq1ENgSw==
+  dependencies:
+    "@babel/core" "^7.13.8"
+    "@babel/plugin-transform-modules-amd" "^7.12.1"
+    amd-name-resolver "^1.3.1"
+    babel-plugin-module-resolver "^4.1.0"
+    bower-config "^1.4.3"
+    bower-endpoint-parser "0.2.2"
+    broccoli "^3.5.1"
+    broccoli-amd-funnel "^2.0.1"
+    broccoli-babel-transpiler "^7.8.0"
+    broccoli-builder "^0.18.14"
+    broccoli-concat "^4.2.5"
+    broccoli-config-loader "^1.0.1"
+    broccoli-config-replace "^1.1.2"
+    broccoli-debug "^0.6.5"
+    broccoli-funnel "^3.0.5"
+    broccoli-funnel-reducer "^1.0.0"
+    broccoli-merge-trees "^3.0.2"
+    broccoli-middleware "^2.1.1"
+    broccoli-slow-trees "^3.1.0"
+    broccoli-source "^3.0.0"
+    broccoli-stew "^3.0.0"
+    calculate-cache-key-for-tree "^2.0.0"
+    capture-exit "^2.0.0"
+    chalk "^4.1.0"
+    ci-info "^2.0.0"
+    clean-base-url "^1.0.0"
+    compression "^1.7.4"
+    configstore "^5.0.1"
+    console-ui "^3.1.2"
+    core-object "^3.1.5"
+    dag-map "^2.0.2"
+    diff "^5.0.0"
+    ember-cli-is-package-missing "^1.0.0"
+    ember-cli-lodash-subset "^2.0.1"
+    ember-cli-normalize-entity-name "^1.0.0"
+    ember-cli-preprocess-registry "^3.3.0"
+    ember-cli-string-utils "^1.1.0"
+    ember-source-channel-url "^3.0.0"
+    ensure-posix-path "^1.1.1"
+    execa "^5.0.0"
+    exit "^0.1.2"
+    express "^4.17.1"
+    filesize "^6.1.0"
+    find-up "^5.0.0"
+    find-yarn-workspace-root "^2.0.0"
+    fixturify-project "^2.1.1"
+    fs-extra "^9.1.0"
+    fs-tree-diff "^2.0.1"
+    get-caller-file "^2.0.5"
+    git-repo-info "^2.1.1"
+    glob "^7.1.6"
+    heimdalljs "^0.2.6"
+    heimdalljs-fs-monitor "^1.1.0"
+    heimdalljs-graph "^1.0.0"
+    heimdalljs-logger "^0.1.10"
+    http-proxy "^1.18.1"
+    inflection "^1.12.0"
+    is-git-url "^1.0.0"
+    is-language-code "^2.0.0"
+    isbinaryfile "^4.0.6"
+    js-yaml "^3.14.0"
+    json-stable-stringify "^1.0.1"
+    leek "0.0.24"
+    lodash.template "^4.5.0"
+    markdown-it "^12.0.4"
+    markdown-it-terminal "0.2.1"
+    minimatch "^3.0.4"
+    morgan "^1.10.0"
+    nopt "^3.0.6"
+    npm-package-arg "^8.1.1"
+    p-defer "^3.0.0"
+    portfinder "^1.0.28"
+    promise-map-series "^0.3.0"
+    promise.hash.helper "^1.0.7"
+    quick-temp "^0.1.8"
+    resolve "^1.20.0"
+    resolve-package-path "^3.1.0"
+    sane "^4.1.0"
+    semver "^7.3.4"
+    silent-error "^1.1.1"
+    sort-package-json "^1.49.0"
+    symlink-or-copy "^1.3.1"
+    temp "0.9.4"
+    testem "^3.2.0"
+    tiny-lr "^2.0.0"
+    tree-sync "^2.1.0"
+    uuid "^8.3.2"
+    walk-sync "^2.2.0"
+    watch-detector "^1.0.1"
+    workerpool "^6.1.4"
+    yam "^1.0.0"
+
+ember-cli@4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-4.0.0.tgz#c20da507126e5d63e75163e68c83a09673c1883f"
   integrity sha512-v0dGVrm9YEwP6CQs4dEs2u2GHhBslljoU68IL1g3xBjzM425qoE+Zru2uGN8BgtkJVx8RCp1yGzOjHiMwlaepA==
