@@ -3283,11 +3283,6 @@ commander@2.8.x:
   dependencies:
     graceful-readlink ">= 1.0.0"
 
-commander@7.1.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-7.1.0.tgz#f2eaecf131f10e36e07d894698226e36ae0eb5ff"
-  integrity sha512-pRxBna3MJe6HKnBGsDyMv8ETbptw3axEdYHoqNh7gu5oDcew8fs0xnivZGm06Ogk8zGAJ9VX+OPEr2GXEQK4dg==
-
 commander@7.2.0:
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-7.2.0.tgz#a36cb57d0b501ce108e4d20559a150a391d97ab7"
@@ -6524,11 +6519,6 @@ java-properties@^1.0.0:
   resolved "https://registry.yarnpkg.com/java-properties/-/java-properties-1.0.2.tgz#ccd1fa73907438a5b5c38982269d0e771fe78211"
   integrity sha512-qjdpeo2yKlYTH7nFdK0vbZWuTCesk4o63v5iVOlhMQPfuIZQfW/HI35SjfhA+4qpg36rnFSvUK5b1m+ckIblQQ==
 
-js-reporters@1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/js-reporters/-/js-reporters-1.2.3.tgz#8febcab370539df62e09b95da133da04b11f6168"
-  integrity sha512-2YzWkHbbRu6LueEs5ZP3P1LqbECvAeUJYrjw3H4y1ofW06hqCS0AbzBtLwbr+Hke51bt9CUepJ/Fj1hlCRIF6A==
-
 js-tokens@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
@@ -7970,11 +7960,6 @@ node-releases@^2.0.1:
   resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-2.0.1.tgz#3d1d395f204f1f2f29a54358b9fb678765ad2fc5"
   integrity sha512-CqyzN6z7Q6aMeF/ktcMVTzhAHCEpf8SOarwpzpf8pNBY2k5/oM34UHldUwp8VKI7uxct2HxSRdJjBaZeESzcxA==
 
-node-watch@0.7.1:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/node-watch/-/node-watch-0.7.1.tgz#0caaa6a6833b0d533487f953c52a6c787769ba7c"
-  integrity sha512-UWblPYuZYrkCQCW5PxAwYSxaELNBLUckrTBBk8xr1/bUgyOkYYTsUcV4e3ytcazFEOyiRyiUrsG37pu6I0I05g==
-
 node-watch@0.7.2:
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/node-watch/-/node-watch-0.7.2.tgz#545f057da8500487eb8287adcb4cb5a7338d7e21"
@@ -9146,17 +9131,7 @@ qunit-decorators@1.1.5:
   dependencies:
     qunit "^2.4.1"
 
-qunit@2.14.1:
-  version "2.14.1"
-  resolved "https://registry.yarnpkg.com/qunit/-/qunit-2.14.1.tgz#02ba25c108f0845fda411a42b5cbfca0f0319943"
-  integrity sha512-jtFw8bf8+GjzY8UpnwbjqTOdK/rvrjcafUFTNpRc6/9N4q5dBwcwSMlcC76kAn5BRiSFj5Ssn2dfHtEYvtsXSw==
-  dependencies:
-    commander "7.1.0"
-    js-reporters "1.2.3"
-    node-watch "0.7.1"
-    tiny-glob "0.2.8"
-
-qunit@^2.4.1:
+qunit@2.17.2, qunit@^2.4.1:
   version "2.17.2"
   resolved "https://registry.yarnpkg.com/qunit/-/qunit-2.17.2.tgz#5cb278e131d931f25c109a0fdb0518be7754c25a"
   integrity sha512-17isVvuOmALzsPjiV7wFg/6O5vJYXBrQZPwocfQSSh0I/rXvfX7bKMFJ4GMVW3U4P8r2mBeUy8EAngti4QD2Vw==
@@ -10816,14 +10791,6 @@ timers-browserify@^2.0.4:
   integrity sha512-9phl76Cqm6FhSX9Xe1ZUAMLtm1BLkKj2Qd5ApyWkXzsMRaA7dgr81kf4wJmQf/hAvg8EEyJxDo3du/0KlhPiKQ==
   dependencies:
     setimmediate "^1.0.4"
-
-tiny-glob@0.2.8:
-  version "0.2.8"
-  resolved "https://registry.yarnpkg.com/tiny-glob/-/tiny-glob-0.2.8.tgz#b2792c396cc62db891ffa161fe8b33e76123e531"
-  integrity sha512-vkQP7qOslq63XRX9kMswlby99kyO5OvKptw7AMwBVMjXEI7Tb61eoI5DydyEMOseyGS5anDN1VPoVxEvH01q8w==
-  dependencies:
-    globalyzer "0.1.0"
-    globrex "^0.1.2"
 
 tiny-glob@0.2.9:
   version "0.2.9"
